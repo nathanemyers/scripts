@@ -11,7 +11,7 @@ hosts = []
 if args.host:
 	hosts = args.host
 else:
-	sshconfig = open('/home/nm021421/.ssh/config', 'r')
+	sshconfig = open('/home/nathan/.ssh/config', 'r')
 	pattern = re.compile('^host=([a-z].*)')
 	for line in sshconfig:
 		host = pattern.match(line)
